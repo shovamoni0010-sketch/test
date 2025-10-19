@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         name: u.name,
         email: u.email,
         id: u.id,
-        salary: Math.floor(Math.random() * 10000),
-        date: '2000-01-01',
+        salary: u.salary,
+        date: u.date,
       }));
       renderTable();
     } catch (error) {
@@ -135,4 +135,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fetchUsers();
 });
+
 
